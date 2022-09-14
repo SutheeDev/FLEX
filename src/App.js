@@ -6,7 +6,6 @@ const App = () => {
       <h1>flex</h1>      
       <h1>flex</h1>      
       <h1>flex</h1>      
-      <h1>flex</h1>          
     </article>
   )
 };

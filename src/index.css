@@ -12,7 +12,16 @@
   font-style: italic 0 100;
   font-stretch: 50% 200%;
 }
+:root {
+  --fontSize: 40vw;
+}
+
+body {
+}
 .square {
+  height: 100vh;
+  width: 85vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +30,9 @@
 h1 {
   font-family: "Flexa", sans-serif;
   text-transform: uppercase;
-  font-size: 200px;
+  font-size: var(--fontSize);
+  line-height: calc(var(--fontSize) - 2rem);
+
   font-weight: 100;
   font-variation-settings: "ital" 0;
   letter-spacing: 0px;
@@ -29,9 +40,9 @@ h1 {
   transition: all 0.3s ease;
   transform-origin: center;
 }
-h1:hover {
-  font-weight: 800;
-  font-variation-settings: "ital" 1;
-  letter-spacing: 100px;
-  font-stretch: 200%;
-}
+/* h1:hover { */
+/* font-weight: 800;
+  font-variation-settings: "ital" 1; */
+/* letter-spacing: 10px; */
+/* font-stretch: 200%; */
+/* } */
