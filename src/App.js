@@ -1,11 +1,10 @@
 import React from 'react'
+import Word from './Word'
 
 const App = () => {
   return (
     <article className="square">
-      <h1>flex</h1>      
-      <h1>flex</h1>      
-      <h1>flex</h1>      
+      <Word/>    
     </article>
   )
 };
