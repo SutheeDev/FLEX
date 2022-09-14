@@ -14,10 +14,10 @@
 }
 :root {
   --fontSize: 40vw;
+
+  --italic: 0;
 }
 
-body {
-}
 .square {
   height: 100vh;
   width: 85vw;
@@ -32,11 +32,12 @@ h1 {
   text-transform: uppercase;
   font-size: var(--fontSize);
   line-height: calc(var(--fontSize) - 2rem);
+  font-variation-settings: "ital" var(--italic);
 
-  font-weight: 100;
-  font-variation-settings: "ital" 0;
-  letter-spacing: 0px;
-  font-stretch: 50%;
+  /* font-weight: 100; */
+  /* font-variation-settings: "ital" 0; */
+  /* letter-spacing: 0px; */
+  /* font-stretch: 50%; */
   transition: all 0.3s ease;
   transform-origin: center;
 }
