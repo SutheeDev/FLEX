@@ -18,7 +18,7 @@
   --italic: 0;
 }
 
-.square {
+.container {
   height: 100vh;
   width: 85vw;
   margin: 0 auto;
@@ -26,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 h1 {
   font-family: "Flexa", sans-serif;
