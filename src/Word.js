@@ -1,6 +1,27 @@
 import React, {useEffect, useRef} from 'react'
 import {gsap, normalize} from 'gsap';
 
+const Words = () => {
+    let container = useRef([]);
+    container.current = [];
+
+    const addToRefs = (el) => {
+        if(el && !container.current.includes(el)){
+            container.current.push(el);
+        }
+    };
+
+    useEffect(() => {
+        gsap.to('.container', 0, {css: {visibility: 'visible'}})
+    }, []);
+
+    return (
+        <article ref={addToRefs} className="container">
+            <Word/>
+        </article>
+    )
+};
+
 const Word = () => {
     let flex = useRef(null);
 
@@ -64,4 +85,5 @@ const Word = () => {
     )
 };
 
-export default Word 
+
+export default Words 
