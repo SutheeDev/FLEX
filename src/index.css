@@ -14,10 +14,14 @@
 }
 :root {
   --fontSize: 40vw;
-
   --italic: 0;
 }
-
+body {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding-top: 1rem;
+}
 .container {
   height: 100vh;
   width: 85vw;
@@ -32,13 +36,12 @@ h1 {
   font-family: "Flexa", sans-serif;
   text-transform: uppercase;
   font-size: var(--fontSize);
-  line-height: calc(var(--fontSize) - 2rem);
+  line-height: calc(var(--fontSize) - 4rem);
   font-variation-settings: "ital" var(--italic);
   transform-origin: center;
 }
-/* h1:hover { */
-/* font-weight: 800;
-  font-variation-settings: "ital" 1; */
-/* letter-spacing: 10px; */
-/* font-stretch: 200%; */
-/* } */
+@media (max-width: 600px) {
+  h1 {
+    line-height: calc(var(--fontSize) - 2rem);
+  }
+}

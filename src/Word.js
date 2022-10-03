@@ -103,7 +103,7 @@ import {gsap} from 'gsap';
 // };
 
 const Words = () => {
-    let flexRef = useRef(null);
+    // let flexRef = useRef(null);
     let container = useRef(null);
             
     useEffect(() => {
@@ -111,6 +111,12 @@ const Words = () => {
             css: {visibility: 'visible'},
             duration: 0,
         })
+        // gsap.to(container, {
+        //     y: -1000,
+        //     duration: 4,
+        //     ease: 'linear',
+        //     repeat: -1,
+        // })
     }, []);
 
     useEffect(() => {
@@ -210,18 +216,18 @@ const Words = () => {
         masterTimeline.forEach((tl, i) => {
             tl.play(10);
         });
-
-        
-
-
     }, []);
-
+ 
     return (
-        <article ref={el => {container = el}} className="container">
-            <h1 ref={el => {flexRef = el}} className='flex'>flex</h1>  
-            <h1 ref={el => {flexRef = el}} className='flex'>flex</h1>  
-            <h1 ref={el => {flexRef = el}} className='flex'>flex</h1>  
-        </article>
+        <main>
+            <article ref={el => {container = el}} className="container">
+                <h1 className='flex'>flex</h1>  
+                <h1 className='flex'>flex</h1>  
+                <h1 className='flex'>flex</h1>  
+                <h1 className='flex'>flex</h1>  
+                <h1 className='flex'>flex</h1>  
+            </article>
+        </main>
     )
 };
 
