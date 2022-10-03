@@ -5,8 +5,8 @@
 }
 @font-face {
   font-family: Flexa;
-  src: url(../public/fonts/GT-Flexa-Trial-VF.ttf) format("truetype"),
-    url(../public/fonts/GT-Flexa-Trial-VF.woff2) format("woff2");
+  src: url(../src/fonts/GT-Flexa-Trial-VF.ttf) format("truetype"),
+    url(../src/fonts/GT-Flexa-Trial-VF.woff2) format("woff2");
 
   font-weight: 100 800;
   font-style: italic 0 100;
@@ -34,12 +34,6 @@ h1 {
   font-size: var(--fontSize);
   line-height: calc(var(--fontSize) - 2rem);
   font-variation-settings: "ital" var(--italic);
-
-  /* font-weight: 100; */
-  /* font-variation-settings: "ital" 0; */
-  /* letter-spacing: 0px; */
-  /* font-stretch: 50%; */
-  /* transition: all 0.3s ease; */
   transform-origin: center;
 }
 /* h1:hover { */
