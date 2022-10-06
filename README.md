@@ -8,10 +8,10 @@ This small project belongs to the ActivelyInactive series, in which I've tried t
 
 ## Technologies
 
-React
-CSS
-JSX
-GSAP3
+- React
+- CSS
+- JSX
+- GSAP3
 
 ## Acknowledgements
 
