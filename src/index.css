@@ -19,8 +19,9 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   padding-top: 1rem;
+  background-color: #020c12;
 }
 .container {
   height: 300vh;
@@ -38,6 +39,7 @@ body {
 }
 h1 {
   font-family: "Flexa", sans-serif;
+  color: #fffbfe;
   text-transform: uppercase;
   font-size: var(--fontSize);
   line-height: calc(var(--fontSize) - 4rem);

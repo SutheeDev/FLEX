@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useRef} from 'react'
 import {gsap} from 'gsap';
 
 const Words = () => {
@@ -14,10 +14,9 @@ const Words = () => {
             duration: 12,
             ease: 'linear',
         })
-    }, []);
 
-    useEffect(() => {
         const flex = document.querySelectorAll('.flex');
+
         const masterTimeline = [];
         flex.forEach((word) => {
             const wordTl = gsap.timeline({repeat: -1});
@@ -115,7 +114,6 @@ const Words = () => {
     }, []);
  
     return (
-
         <main className='main'>
             <article className="container">
                 <h1 className='flex'>flex</h1>  
@@ -141,9 +139,5 @@ const Words = () => {
         </main>
     )
 };
-
-
-
-
 
 export default Words 
